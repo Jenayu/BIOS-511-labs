@@ -18,10 +18,10 @@
 
 
 ods noproctitle;
-libname echo "C:\Users\Jennifer Chen\Documents\course documents\fall 2018\bios 511\datasets\echo";
+libname echo ".\datasets\echo";
 footnote "ECHO Data Extract Date: 2018-09-04";
 
-ods pdf file="C:\Users\Jennifer Chen\Documents\course documents\fall 2018\bios 511\labs\lab2\ lab-02-730120234-output.pdf";
+ods pdf file=".\labs\lab2\ lab-02-730120234-output.pdf";
 options nodate nonumber;
 
 
