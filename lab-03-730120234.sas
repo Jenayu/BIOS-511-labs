@@ -19,9 +19,9 @@
 
 
 ods noproctitle;
-ods html file='C:\Users\Jennifer Chen\Documents\course documents\fall 2018\bios 511\labs\lab3\lab-03-730120234-output.html';
+ods html file='.\labs\lab3\lab-03-730120234-output.html';
 
-libname echo "C:\Users\Jennifer Chen\Documents\course documents\fall 2018\bios 511\datasets\echo";
+libname echo ".\datasets\echo";
 
 footnote "ECHO Data Extract Date: 2018-09-13";
 
