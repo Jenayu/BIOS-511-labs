@@ -16,8 +16,8 @@
 *
 ******************************************************************************/
 
-%let root = C:\Users\Jennifer Chen\Documents\course documents\fall 2018\bios 511\labs\lab12;
-%let echoDat = C:\Users\Jennifer Chen\Documents\course documents\fall 2018\bios 511\datasets\echo;
+%let root = .\labs\lab12;
+%let echoDat = .\datasets\echo;
 %let analysisDat = &root.\data;
 
 
