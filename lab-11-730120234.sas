@@ -17,9 +17,9 @@
 ******************************************************************************/
 
 
-libname echo 'C:\Users\Jennifer Chen\Documents\course documents\fall 2018\bios 511\datasets\echo';
+libname echo '.\datasets\echo';
 
-%let outputPath= C:\Users\Jennifer Chen\Documents\course documents\fall 2018\bios 511\labs\lab11 ;
+%let outputPath= .\labs\lab11 ;
 %let task2FName= lab-11-730120234-Task-2-output ; 
 %let task3FName= lab-11-730120234-Task-3-output ;
 
