@@ -19,9 +19,9 @@
 
 
 ods noproctitle;
-ods html file='C:\Users\Jennifer Chen\Documents\course documents\fall 2018\bios 511\labs\lab5\lab-05-730120234-output.html';
+ods html file='.\labs\lab5\lab-05-730120234-output.html';
 
-libname echo "C:\Users\Jennifer Chen\Documents\course documents\fall 2018\bios 511\datasets\echo";
+libname echo ".\datasets\echo";
 
 footnote "ECHO Data Extract Date: 2018-09-25";
 
@@ -44,7 +44,7 @@ run;
 data work.dm1;
 	set echo.dm;
 	format AGE AGECAT.;
-	label AGECATEGORY = 갾Age Category갿;
+	label AGECATEGORY = 혖gAge Category혖h;
 	AGECATEGORY = put(AGE,AGECAT.);
 run;
 
@@ -57,7 +57,7 @@ run;
 
 title1 "Task 1 / Step 3: One-Way Analysis of Age Categories (Using Formatted AGE Variable)";
 proc freq data=dm1;
-	label AGE = 갾Age Category갿;
+	label AGE = 혖gAge Category혖h;
 	table AGE;
 run;
 
