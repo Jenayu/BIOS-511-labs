@@ -17,10 +17,10 @@
 ******************************************************************************/
 
 
-libname echo "C:\Users\Jennifer Chen\Documents\course documents\fall 2018\bios 511\datasets\echo";
-libname lab9 "C:\Users\Jennifer Chen\Documents\course documents\fall 2018\bios 511\labs\lab9";
+libname echo ".\datasets\echo";
+libname lab9 ".\labs\lab9";
 
-ods pdf file="C:\Users\Jennifer Chen\Documents\course documents\fall 2018\bios 511\labs\lab9\lab-09-730120234-output.pdf";
+ods pdf file=".\labs\lab9\lab-09-730120234-output.pdf";
 options nodate nonumber;
 option papersize = (10in 15in);
 
