@@ -18,8 +18,8 @@
 
 
 
-libname echo "C:\Users\Jennifer Chen\Documents\course documents\fall 2018\bios 511\datasets\echo";
-libname lab6 "C:\Users\Jennifer Chen\Documents\course documents\fall 2018\bios 511\labs\lab6";
+libname echo ".\datasets\echo";
+libname lab6 ".\labs\lab6";
 
 
 
