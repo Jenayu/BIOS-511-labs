@@ -17,8 +17,8 @@
 ******************************************************************************/
 
 
-libname echo "C:\Users\Jennifer Chen\Documents\course documents\fall 2018\bios 511\datasets\echo";
-libname lab9 "C:\Users\Jennifer Chen\Documents\course documents\fall 2018\bios 511\labs\lab9";
+libname echo ".\datasets\echo";
+libname lab9 ".\labs\lab9";
 
 
 /* Create a temporary dm dataset that only retains the desirable variables. */
@@ -42,7 +42,7 @@ run;
 
 /* Create adlb_1 dataset by adding variable LBSEQ and LBNRIND to adlb_0 dataset.
    The values of LBSEQ start at 1 for each subject and increment by 1 for each successive observation for the subject. 
-   The values of LBNRIND is derived using the LBSTRESN variable: 갾L갿 for low, 갾N갿 for normal, 갾H갿 for high; 
+   The values of LBNRIND is derived using the LBSTRESN variable: 혖gL혖h for low, 혖gN혖h for normal, 혖gH혖h for high; 
    if LBSTRESN is missing, then LBNRIND will also be missing. */
 data adlb_1;
 	set adlb_0;
@@ -132,7 +132,7 @@ run;
 
 /* Create adlb_6 dataset by merging adlb_5 and adlb_4 
    and by adding the variable BASE and BASECAT for each test conducted on each subject, 
-   which is set to the value of LBSTRESN and LBNRIND from the observation where LBBLFL = 갳 */
+   which is set to the value of LBSTRESN and LBNRIND from the observation where LBBLFL = 혖Y */
 data adlb_6;
 	merge adlb_5 adlb_4;
 	by USUBJID LBTESTCD;
