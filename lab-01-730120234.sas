@@ -20,7 +20,7 @@
 
 ods noproctitle;
 
-libname orion "C:\Users\Jennifer Chen\Documents\course documents\fall 2018\bios 511\datasets";
+libname orion ".\datasets";
 
 
 
@@ -66,7 +66,7 @@ run;
 
 
 *This section creates a PDF output file;
-ods pdf file="C:\Users\Jennifer Chen\Documents\course documents\fall 2018\bios 511\labs\outputs\output1\freq9.pdf";
+ods pdf file=".\labs\outputs\output1\freq9.pdf";
 
 proc freq data=orion.customer;
 	tables country gender country*gender;
@@ -77,7 +77,7 @@ ods pdf close;
 
 
 *This section creates an RTF output file;
-ods rtf file ="C:\Users\Jennifer Chen\Documents\course documents\fall 2018\bios 511\labs\outputs\output1\freq10.rtf";
+ods rtf file =".\labs\outputs\output1\freq10.rtf";
 
 proc freq data=orion.customer;
 	tables country gender country*gender;
@@ -88,7 +88,7 @@ ods rtf close;
 
 
 *This section creates an RTF output file with its title plugged the body;
-ods rtf file ="C:\Users\Jennifer Chen\Documents\course documents\fall 2018\bios 511\labs\outputs\output1\freq10_bodytitle.rtf" bodytitle;
+ods rtf file =".\labs\outputs\output1\freq10_bodytitle.rtf" bodytitle;
 
 proc freq data=orion.customer;
 	tables country gender country*gender;
@@ -100,7 +100,7 @@ ods rtf close;
 
 
 *This section creates an HTML output file;
-ods html file = "C:\Users\Jennifer Chen\Documents\course documents\fall 2018\bios 511\labs\outputs\output1\freq11.html";
+ods html file = ".\labs\outputs\output1\freq11.html";
 
 proc freq data=orion.customer;
 	tables country gender country*gender;
@@ -112,7 +112,7 @@ ods html close;
 
 
 *This section selects which results include in the output;
-ods pdf file = "C:\Users\Jennifer Chen\Documents\course documents\fall 2018\bios 511\labs\outputs\output1\select_exclude13.pdf";
+ods pdf file = ".\labs\outputs\output1\select_exclude13.pdf";
 
 title "Moment and Extreme Observations";
 ods select moments extremeobs;
@@ -135,7 +135,7 @@ ods pdf close;
 
 
 *This section creates a new temporary dataset with an object;
-ods pdf file="C:\Users\Jennifer Chen\Documents\course documents\fall 2018\bios 511\labs\outputs\output1\ods_output_15.pdf";
+ods pdf file=".\labs\outputs\output1\ods_output_15.pdf";
 
 * A new temporary dataset work.salary_quant is made from the "Quantiles" ODS object;
 ods pdf select quantiles;
@@ -152,7 +152,7 @@ ods pdf close;
 
 
 *This section selects the text styles for the output;
-ods pdf file ="C:\Users\Jennifer Chen\Documents\course documents\fall 2018\bios 511\labs\outputs\output1\fav_style17.pdf" style=journal;
+ods pdf file =".\labs\outputs\output1\fav_style17.pdf" style=journal;
 
 proc freq data=orion.customer;
 	tables country gender country*gender;
@@ -164,7 +164,7 @@ ods pdf close;
 
 
 *This section select whether to insert a new page at the beginning of each procedure's output;
-ods pdf file = "C:\Users\Jennifer Chen\Documents\course documents\fall 2018\bios 511\labs\outputs\output1\start_page18.pdf"
+ods pdf file = ".\labs\outputs\output1\start_page18.pdf"
 	style = journal
 	startpage = no;
 
@@ -186,7 +186,7 @@ ods pdf close;
 
 
 
-ods pdf file ="C:\Users\Jennifer Chen\Documents\course documents\fall 2018\bios 511\labs\outputs\output1\contents19.pdf";
+ods pdf file =".\labs\outputs\output1\contents19.pdf";
 
 ods select variables;
 proc contents data=orion.employee_payroll;
