@@ -17,8 +17,8 @@
 ******************************************************************************/
 
 
-libname echo "C:\Users\Jennifer Chen\Documents\course documents\fall 2018\bios 511\datasets\echo";
-libname lab10 "C:\Users\Jennifer Chen\Documents\course documents\fall 2018\bios 511\labs\lab10";
+libname echo ".\datasets\echo";
+libname lab10 ".\labs\lab10";
 option nonumber nodate;
 ods noptitle;
 
