@@ -42,6 +42,6 @@ data pc_0;
 
   	keep USUBJID AUC12;
 
-	file "C:\Users\Jennifer Chen\Documents\course documents\fall 2018\bios 511\labs\lab10\ECHO_AUC.csv" dlm=",";
+	file ".\labs\lab10\ECHO_AUC.csv" dlm=",";
 	put USUBJID AUC12;
 run;
