@@ -18,7 +18,7 @@
 
 
 
-libname lab7 "C:\Users\Jennifer Chen\Documents\course documents\fall 2018\bios 511\labs\lab7";
+libname lab7 ".\labs\lab7";
 
 
 
