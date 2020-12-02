@@ -18,10 +18,10 @@
 
 
 
-libname echo "C:\Users\Jennifer Chen\Documents\course documents\fall 2018\bios 511\datasets\echo";
-libname lab8 "C:\Users\Jennifer Chen\Documents\course documents\fall 2018\bios 511\labs\lab8";
+libname echo ".\datasets\echo";
+libname lab8 ".\labs\lab8";
 
-ods pdf file ="C:\Users\Jennifer Chen\Documents\course documents\fall 2018\bios 511\labs\lab8\lab-08-730120234.pdf"; 
+ods pdf file =".\labs\lab8\lab-08-730120234.pdf"; 
 options nodate nonumber;
 
 
