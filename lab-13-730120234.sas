@@ -18,13 +18,13 @@
 
 
 
-%let root = C:\Users\Jennifer Chen\Documents\course documents\fall 2018\bios 511\labs\lab13;
-%let echoDat = C:\Users\Jennifer Chen\Documents\course documents\fall 2018\bios 511\datasets\echo;
+%let root = .\labs\lab13;
+%let echoDat = .\datasets\echo;
 %let analysisDat = &root.\data;
 %let outputPath = &root.\output;
 
-libname echo "C:\Users\Jennifer Chen\Documents\course documents\fall 2018\bios 511\datasets\echo";
-libname outDat "C:\Users\Jennifer Chen\Documents\course documents\fall 2018\bios 511\labs\lab13\data";
+libname echo ".\datasets\echo";
+libname outDat ".\labs\lab13\data";
 
 
 data ranges;
